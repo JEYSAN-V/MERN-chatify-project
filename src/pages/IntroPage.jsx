@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const IntroPage = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-base-200">
@@ -5,14 +7,9 @@ const IntroPage = () => {
       <p className="text-lg text-center text-base-content/70 mb-8">
         Connect with your friends, family, and colleagues easily.
       </p>
-      {/* You can add call-to-action buttons or other content below */}
       <div className="flex gap-4">
-        <a href="/login" className="btn btn-primary">
-          Log In
-        </a>
-        <a href="/signup" className="btn btn-secondary">
-          Sign Up
-        </a>
+        <Link to='/login' className="btn btn-primary">Log In</Link>
+        <Link to='/signup' className="btn btn-secondary">sign up</Link>
       </div>
     </div>
   );
